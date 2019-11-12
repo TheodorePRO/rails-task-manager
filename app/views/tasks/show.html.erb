@@ -1,0 +1,19 @@
+
+<h1>
+  <%= @task.title  %>
+</h1>
+<div>
+  <button class="btn-primary">
+    <%= link_to 'Edit', edit_task_path(@task) %>
+  </button>
+</div>
+<h2> Tasks details :
+  <%=  @task.details %>
+</h2>
+<p> Completed :
+  <%= @task.completed %>
+</p>
+
+<%= link_to 'Back to tasks', tasks_path %>
+
+

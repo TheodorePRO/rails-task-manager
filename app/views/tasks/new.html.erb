@@ -1,0 +1,19 @@
+<h1>add a new task</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+
+      <%= form_for @task do |t| %>
+        <%= t.label :title %>
+        <%= t.text_field :title %>
+
+        <%= t.label :details %>
+        <%= t.text_field :details %>
+
+        <%= t.submit %>
+      <% end %>
+
+    </div>
+  </div>
+</div>

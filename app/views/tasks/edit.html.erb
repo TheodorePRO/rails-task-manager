@@ -1,0 +1,19 @@
+<h1>Update task <%= @task.title %></h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+
+      <%= form_for @task do |t| %>
+        <%= t.label :title %>
+        <%= t.text_field :title %>
+
+        <%= t.label :details %>
+        <%= t.text_field :details %>
+        <%= t.check_box :completed, {}, true, false %>
+        <%= t.submit %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
